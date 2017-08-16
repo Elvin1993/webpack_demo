@@ -34,7 +34,17 @@ module.exports = {
       {
         test: /\.less$/,
         loader: 'style-loader!css-loader!postcss-loader!less-loader'
+      },
+      {
+        test: /\.tpl$/,
+        loader: 'ejs-loader',
+        include: path.resolve(__dirname, "src")
       }
+      // {
+      //   test: /\.html$/,
+      //   loader: 'html-loader',
+      //   include: path.resolve(__dirname, "src")
+      // }
      ]
   }
   ,
