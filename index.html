@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+<h3><%= htmlWebpackPlugin.options.title%></h3>
+<div class="flex-box">
+  <div class="login-box"></div>
+</div>
+
+<script>
+  var htmlWebpackPlugin =  <%= JSON.stringify(htmlWebpackPlugin)%>
+  console.log(htmlWebpackPlugin)
+</script>
+</body>
+</html>
