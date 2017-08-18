@@ -1,9 +1,18 @@
 @import url('./a.less');
 @import url('./b.css');
+
+@font-face {
+  font-family: "rwFont";
+  src: url('../../fonts/rw.ttc') format('ttc');
+  font-weight: 600;
+  font-style: normal;
+}
 .layer {
   width: 600px;
   height: 200px;
   background: #fff;
+  color: red;
+  font-family: "rwFont";
   div {
     width: 400px;
     height: 100px;
